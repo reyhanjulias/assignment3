@@ -6,6 +6,8 @@
     <title>Reyhan - Full-stack Developer & Web3 Enthusiast</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css" />
+    <!-- Typed.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   </head>
   <body class="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-100 relative overflow-x-hidden">
     <!-- Animated Background Elements -->
@@ -238,20 +240,29 @@
 
     <script src="dist/main.js"></script>
     <script src="node_modules/typed.js/dist/typed.umd.js"></script>
+    <!-- Script untuk Typed.js -->
     <script>
-      var typed = new Typed("#typed-text", {
-        strings: [
-          "Full Stack Developer",
-          "Frontend Developer",
-          "Backend Developer",
-        ],
-        typeSpeed: 50,
-        backSpeed: 30,
-        backDelay: 2000,
-        startDelay: 500,
-        loop: true,
-        showCursor: true,
-        cursorChar: "|",
+      document.addEventListener('DOMContentLoaded', function() {
+        var typed = new Typed('#typed-text', {
+          strings: [
+            'Full-stack Developer',
+            'React Specialist', 
+            'Node.js Expert',
+            'TypeScript Developer',
+            'Smart Contract Developer',
+            'DeFi Enthusiast',
+            'Blockchain Developer',
+            'Web3 Builder'
+          ],
+          typeSpeed: 80,
+          backSpeed: 50,
+          backDelay: 2000,
+          startDelay: 1000,
+          loop: true,
+          showCursor: true,
+          cursorChar: '|',
+          autoInsertCss: true,
+        });
       });
     </script>
   </body>
